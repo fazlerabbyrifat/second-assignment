@@ -146,6 +146,81 @@ Navbar and heading sections styles
     color: #FFFFFF;
     border-radius: 5px;
 }
+/* ------------------------
+    Special features styles
+    ------------------------ */
+
+    .special-features{
+        width: 1440px;
+        height: 1059px;
+        margin: 130px 240px;
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+    }
+    /* .vl{
+        width: 5px;
+        height: 106px;
+        right: 50%;
+        top: 0;
+        background-color: #FF900E;
+    } */
+    .special-features-content h2{
+        width: 468px;
+        height: 106px;
+        font-size: 45px;
+        color: #131313;
+        margin-bottom: 24px;
+    }
+    .special-features-content p{
+        width: 586px;
+        height: 78px;
+        font-size: 16px;
+        color: #727272;
+    }
+    
+    .special-feature{
+        width: 586px;
+        height: 171px;
+        border: 2px solid black;
+        border-radius: 8px;
+        border-style: none;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    }
+    .feature{
+        width: 484px;
+        height: 111px;
+        padding-left: 20px;
+    }
+    .feature h4{
+        padding-top: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #131313;
+    }
+    .feature p{
+        font-size: 16px;
+        color: #727272;
+    }
+    /* ----------------------
+        features image and button section
+        ------------------------ */
+    .special-features-img{
+        width: 800px;
+        height: 1059px;
+    }
+    
+    .special-btn{
+        width: 342px;
+        height: 200px;
+        transform: translate(-10%, -40%);
+        font-size: 42px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: #FF900E;
+        border-radius: 8px;
+    
+    }
 
 
 
