@@ -158,19 +158,20 @@ Navbar and heading sections styles
         justify-content: space-between;
         gap: 80px;
     }
-    /* .vl{
-        width: 5px;
-        height: 106px;
-        right: 50%;
-        top: 0;
-        background-color: #FF900E;
-    } */
+
     .special-features-content h2{
         width: 468px;
         height: 106px;
         font-size: 45px;
         color: #131313;
         margin-bottom: 24px;
+    }
+    hr{
+        width: 5px;
+        height: 105px;
+        background:  #FF900E;
+        margin-left: -20px;
+        margin-top: -120px;
     }
     .special-features-content p{
         width: 586px;
@@ -252,6 +253,12 @@ Navbar and heading sections styles
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: width 1s, height 1s, transform 2s;
+}
+.icon:hover{
+    width: 342px;
+    height: 342px;
+    transform: rotate(360deg);
 }
 .sponsor-section{
     width: 1500px;
@@ -297,12 +304,13 @@ Navbar and heading sections styles
     Responsive section for small devices
 ------------------------ */
 @media only screen and (max-width: 576px ) {
-    header, .header-nav, .header-content, .banner, .features-content, .special-features, .feature, .special-features-img, .special-features-content,.special-feature, .special-features-content p, .special-features-content h2{
+    header, .header-nav, .header-content, .banner, .features-content, .special-features, .feature, .special-features-img, .facts, .icons, .sponsor-section{
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
     }
-    .header-nav, .nav-items, .header-content, .features-section, .special-features{
+    .header-nav, .nav-items, .header-content, .features-section, .icons{
         display: flex;
         flex-direction: column;
     }
@@ -323,7 +331,30 @@ Navbar and heading sections styles
     }
     .special-features-img img{
         width: 350px;
-        height: 350px;
+    }
+    .special-features{
+        width: 480px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .feature{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 0;
+    }
+    .sponsors{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+    .footer{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 30px 0;
     }
 
 }
