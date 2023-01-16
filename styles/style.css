@@ -260,6 +260,36 @@ Navbar and heading sections styles
     height: 342px;
     transform: rotate(360deg);
 }
+    /* extra section design */
+/* Architects section design */
+.architects{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 30px 210px;
+}
+.architects h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #131313;
+    text-align: center;
+}
+.architects p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.architect-img{
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+}
+.architect-img img{
+    width: 100%;
+    height: 450px;
+}
 .sponsor-section{
     width: 1500px;
     height: 400px;
@@ -304,13 +334,13 @@ Navbar and heading sections styles
     Responsive section for small devices
 ------------------------ */
 @media only screen and (max-width: 576px ) {
-    header, .header-nav, .header-content, .banner, .features-content, .special-features, .feature, .special-features-img, .facts, .icons, .sponsor-section{
+    header, .header-nav, .header-content, .banner, .features-content, .special-features, .feature, .special-features-img, .facts, .icons, .sponsor-section, .architects{
         width: 100%;
         height: auto;
         margin: 0;
         padding: 0;
     }
-    .header-nav, .nav-items, .header-content, .features-section, .icons{
+    .header-nav, .nav-items, .header-content, .features-section, .icons, .architect-img{
         display: flex;
         flex-direction: column;
     }
